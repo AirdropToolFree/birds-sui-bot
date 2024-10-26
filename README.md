@@ -1,60 +1,58 @@
-# Auto BIRDS Tool using Node.js (Supports both No Proxy and Proxy)
+# Tool Auto BIRDS-SUI sử dụng Node.js (Hỗ trợ cả Không có Proxy và Proxy)
 
-## Description
-Auto BIRDS is a script developed using Node.js to automate tasks in the BIRDS game. This tool offers the following main features:
+## Mô tả
+Auto BIRDS là một tập lệnh được phát triển bằng Node.js để tự động hóa các tác vụ trong trò chơi BIRDS. Công cụ này cung cấp các tính năng chính sau:
 
-- ✔️ Auto worm catching
-- ✔️ Auto egg cracking
-- ✔️ Auto upgrading
-- ✔️ Auto tasks (automatically performs some tasks, some may not be supported)
-- ✔️ Auto join guild
-- 🚫 Daily missions are not supported yet, they will be included in upcoming versions.
+- ✔️ Tự động bắt sâu
+- ✔️ Tự động đập trứng
+- ✔️ Tự động nâng cấp
+- ✔️ Nhiệm vụ tự động (tự động thực hiện một số tác vụ, một số có thể không được hỗ trợ)
+- ✔️ Tự động tham gia guild
+- 🚫 Nhiệm vụ hàng ngày hiện chưa được hỗ trợ, chúng sẽ được đưa vào các phiên bản sắp tới.
 
-## Requirements
+## Yêu cầu
 
-- Node.js should be installed on your system.
+- Node.js phải được cài đặt trên hệ thống của bạn.
 
-## Installation Guide
+## Hướng dẫn cài đặt
 
-1. **Install necessary modules**  
-   Run the following command to install the required Node.js modules:
+1. **Cài đặt các mô-đun cần thiết**
+Chạy lệnh sau để cài đặt các mô-đun Node.js cần thiết:
    ```bash
    npm install
-2. **Create data files**  
-   Create two files named data.txt and proxy.txt:
+2. **Tạo tệp dữ liệu**
+Tạo hai tệp có tên data.txt và proxy.txt:
 
 - data.txt:
+   - Tệp này phải bao gồm định dạng query_id=xxx hoặc user=xxxx
+- proxy.txt (Chỉ tạo nếu sử dụng nhiều tài khoản):
+   - Định dạng proxy phải là: http://user:pass@ip:port
+   - Nếu bạn chỉ sử dụng một tài khoản, không cần tạo tệp này.
+## Chạy tool
 
-  - This file must include the format query_id=xxx or user=xxxx
-(you can get these values using the bypass extension).
- - proxy.txt (Only create if using multiple accounts):
-   - The proxy format should be: http://user:pass@ip:port
-   - If you are only using one account, there's no need to create this file.
-## Run the tool
-
-- If not using a proxy, run the following command:
+- Nếu không sử dụng proxy, hãy chạy lệnh sau:
    ```bash
    node birds.js
-- If using a proxy, run the command:
+- Nếu sử dụng proxy, hãy chạy lệnh:
    ```bash
    node birds-proxy.js
-## Notes
-- Replace the referral code  
-In the source code of the tool, find and replace the referral code by:
+## Lưu ý
+- Thay thế mã giới thiệu
+Trong mã nguồn của công cụ, hãy tìm và thay thế mã giới thiệu bằng:
 
-  - Press Ctrl + F to search for the keyword 376905749 and replace it with your referral link or user ID.
-  - [Register for BirdX](https://t.me/birdx2_bot/birdx?startapp=1288479303)
+- Nhấn Ctrl + F để tìm kiếm từ khóa 376905749 và thay thế bằng liên kết giới thiệu hoặc ID người dùng của bạn.
+- [Đăng ký BirdX](https://t.me/birdx2_bot/birdx?startapp=1288479303)
 
-## File formats
-- data.txt file format:
+## Định dạng tệp
+- Định dạng tệp data.txt:
 
    ```bash
    query_id=xxx
- - or
+- hoặc
 
    ```bash
    user=xxxx
-- proxy.txt file format (if using proxy):
+- Định dạng tệp proxy.txt (nếu sử dụng proxy):
 
    ```text
    http://user:pass@ip:port
