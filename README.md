@@ -7,6 +7,7 @@ Auto BIRDS is a script developed using Node.js to automate tasks in the BIRDS ga
 - ✔️ Auto egg cracking
 - ✔️ Auto upgrading
 - ✔️ Auto tasks (automatically performs some tasks, some may not be supported)
+- ✔️ Auto join guild
 - 🚫 Daily missions are not supported yet, they will be included in upcoming versions.
 
 ## Requirements
